@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CryptoCurrencyTracker</string>
+    <string name="_1h">1h:</string>
+    <string name="percent_mark">%</string>
+    <string name="_24h">24h:</string>
+    <string name="_7d">7d:</string>
+    <string name="dollar_mark">$</string>
+    <string name="bitcoin_full">Bitcoin</string>
+    <string name="bitcoin">BTC</string>
 </resources>
