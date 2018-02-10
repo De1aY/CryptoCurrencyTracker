@@ -36,17 +36,17 @@ class MainActivity : AppCompatActivity() {
             if (crypt["symbol"] !in cryptoIDs) {
                 continue
             }
-            var newCurrencyView: View = layoutInflater.inflate(R.layout.currency_layout, null)
-            var logo: ImageView = newCurrencyView.findViewById<ImageView>(R.id.logo)
-            var text: TextView = newCurrencyView.findViewById<TextView>(R.id.text)
-            var fullText: TextView = newCurrencyView.findViewById<TextView>(R.id.text_full)
-            var currency: TextView = newCurrencyView.findViewById<TextView>(R.id.currency)
-            var _1h: TextView = newCurrencyView.findViewById<TextView>(R.id._1h)
-            var _24h: TextView = newCurrencyView.findViewById<TextView>(R.id._24h)
-            var _7d: TextView = newCurrencyView.findViewById<TextView>(R.id._7d)
-            var _1hPercentMark: TextView = newCurrencyView.findViewById<TextView>(R.id._1h_percent_mark)
-            var _24hPercentMark: TextView = newCurrencyView.findViewById<TextView>(R.id._24h_percent_mark)
-            var _7dPercentMark: TextView = newCurrencyView.findViewById<TextView>(R.id._7d_percent_mark)
+            val newCurrencyView: View = layoutInflater.inflate(R.layout.currency_layout, null)
+            val logo: ImageView = newCurrencyView.findViewById<ImageView>(R.id.logo)
+            val text: TextView = newCurrencyView.findViewById<TextView>(R.id.text)
+            val fullText: TextView = newCurrencyView.findViewById<TextView>(R.id.text_full)
+            val currency: TextView = newCurrencyView.findViewById<TextView>(R.id.currency)
+            val _1h: TextView = newCurrencyView.findViewById<TextView>(R.id._1h)
+            val _24h: TextView = newCurrencyView.findViewById<TextView>(R.id._24h)
+            val _7d: TextView = newCurrencyView.findViewById<TextView>(R.id._7d)
+            val _1hPercentMark: TextView = newCurrencyView.findViewById<TextView>(R.id._1h_percent_mark)
+            val _24hPercentMark: TextView = newCurrencyView.findViewById<TextView>(R.id._24h_percent_mark)
+            val _7dPercentMark: TextView = newCurrencyView.findViewById<TextView>(R.id._7d_percent_mark)
             when (crypt["symbol"]) {
                 "BTC" -> logo.setImageResource(R.drawable.btc)
                 "ETH" -> logo.setImageResource(R.drawable.eth)
